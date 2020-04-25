@@ -1,0 +1,12 @@
+from flask import Flask, request
+from flask_restplus import Api, Resource, reqparse, inputs
+
+
+
+#from waitress import serve
+
+#instanciando a Api Flask
+flask_app = Flask(__name__)
+
+#Configurando parâmetros do Flask
+flask_app.config.setdefault('RESTPLUS_MASK_SWAGGER', False)
